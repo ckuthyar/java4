@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 public class J26{
     public static void main(String[] args){
-	int count=1000;
+	int count=100;
 	ArrayList<String> prisons=new ArrayList<>();
 	ArrayList<Integer> lucky=new ArrayList<>();
 	for(int i=0;i<count;i++){
