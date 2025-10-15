@@ -2,6 +2,8 @@ import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 public class J29{
    public static void main(String[] args) throws FileNotFoundException{
    	String s1="";
@@ -18,15 +20,22 @@ public class J29{
 
    	}
    	int maxSub1=0;
+      int maxSub11=0;
    	int len1=sub1.size();
    	for(int i=0;i<len1;i++){
    		if (sub1.get(i)>maxSub1){
    			maxSub1=sub1.get(i);
    		}
    	}
-   	System.out.println(maxSub1);
-   	System.out.println(names);
-   	System.out.println(sub1);
+      
+   	
+   	
+      maxSub11=Collections.max(sub1);
+      System.out.println(sub1);
+      System.out.println(maxSub11);
+
+      System.out.println(maxSub1);
+      System.out.println(names);
 	
    }
 }
